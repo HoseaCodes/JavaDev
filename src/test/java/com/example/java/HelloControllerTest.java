@@ -24,7 +24,9 @@ public class HelloControllerTest {
     // to send HTTP requests into the DispatcherServlet and make assertions
     private MockMvc mvc;
 
-    @Timestamppublic void getHello() throws Exception {
+    @Test 
+    public void getHello() throws Exception {
+        
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                                         .andExpect(status().isOk())
                                         .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
