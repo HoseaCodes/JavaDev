@@ -7,20 +7,34 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width"/>
     <base href="/"/>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
     <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Demo</h1>
-    <div class="container unauthenticated">
-        With GitHub: <a href="/oauth2/authorization/github">click here</a>
-    </div>
-    <div class="container authenticated">
-        Logged in as: <span id="user"></span>
-        <div>
-          <button onClick="logout()" class="btn btn-primary">Logout</button>
-        </div>
+    <div class="container">
+            <div class="col s12">
+                <h1 class="center-align">Demo</h1>
+            </div>
+            <div class="col s6 center-align">
+                <div class="container unauthenticated">
+                    With GitHub: <a href="/oauth2/authorization/github">click here</a>
+                </div>
+            </div>
+            <div class="col s6 center-align">
+                <div class="container authenticated">
+                    Logged in as: <span id="user"></span>
+                    <div>
+                        <button onClick="logout()" class="btn btn-primary pulse z-depth-4">Logout</button>
+                    </div>
+                </div>
+            </div>
     </div>
     <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
     <script type="text/javascript">

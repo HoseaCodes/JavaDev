@@ -4,7 +4,7 @@
 
 `./mvnw spring-boot:run`
 
-Open `http:localhost:8080/greeting`
+Open `http:localhost:8080`
 
 ## Endpoints
 
@@ -13,3 +13,7 @@ For end point greeting queries use `http:localhost:8080/greeting?name=NameOfYour
 `/greeting`
 
 `/hello`
+
+## Framework
+
+[Materialize](https://materializecss.com/)
